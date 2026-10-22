@@ -1,0 +1,14 @@
+unclank is released under two licences.
+
+Written content: Creative Commons Attribution 4.0 International (CC BY 4.0).
+This covers the skills (skills/), the research (research/), the eval cases and
+fixtures (evals/) and the other documentation. Full text: LICENSE-CC-BY-4.0.txt
+or https://creativecommons.org/licenses/by/4.0/legalcode
+
+To credit it, name "unclank", link the repository, and say if you changed it.
+
+Code: MIT License. This covers the scripts (scripts/) and any other code.
+Full text: LICENSE-MIT.
+
+Third-party sources cited in research/ belong to their authors. unclank links to
+them and paraphrases them; it doesn't relicense them.

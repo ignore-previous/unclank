@@ -1,0 +1,2 @@
+.page { max-width: 60rem; margin: 0 auto; padding: 1rem; font-family: system-ui, sans-serif; }
+.nav { display: flex; justify-content: space-between; }

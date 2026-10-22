@@ -1,0 +1,8 @@
+{
+  "name": "unclank",
+  "version": "0.1.0",
+  "description": "Evidence-backed checks for the tells that make work look machine-made: launch defaults, quiz items, game store pages, pixel art, AI images, UI and prose.",
+  "author": { "name": "unclank" },
+  "license": "CC-BY-4.0 AND MIT",
+  "keywords": ["ai-slop", "audit", "checklist", "launch", "quiz", "pixel-art", "game-store", "design", "writing"]
+}

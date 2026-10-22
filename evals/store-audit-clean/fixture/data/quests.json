@@ -1,0 +1,195 @@
+{
+  "quests": [
+    {
+      "id": "q_first_set",
+      "giver": "mechanic",
+      "steps": [
+        {
+          "id": "find_valve",
+          "flag": "has_valve",
+          "text": "Get a replacement valve from the ferry cargo."
+        },
+        {
+          "id": "tune",
+          "flag": "set_1_tuned",
+          "text": "Tune the set to the pier frequency."
+        }
+      ],
+      "reward": {
+        "item": "soldering_iron",
+        "once": true
+      }
+    },
+    {
+      "id": "q_schoolchild_set",
+      "giver": "child",
+      "steps": [
+        {
+          "id": "open",
+          "flag": "set_opened",
+          "text": "Open the casing."
+        },
+        {
+          "id": "fix",
+          "flag": "set_fixed",
+          "text": "Replace the burnt capacitor."
+        },
+        {
+          "id": "return",
+          "flag": "set_returned",
+          "text": "Bring it back to the school."
+        }
+      ],
+      "reward": {
+        "item": "paper_map",
+        "once": true
+      }
+    },
+    {
+      "id": "q_ferry_horn",
+      "giver": "ferry",
+      "steps": [
+        {
+          "id": "salvage",
+          "flag": "has_horn_relay",
+          "text": "Salvage a relay from the sunk tender at low tide."
+        },
+        {
+          "id": "fit",
+          "flag": "horn_fixed",
+          "text": "Fit the relay to the ferry's radio horn."
+        }
+      ],
+      "reward": {
+        "item": "tide_table",
+        "once": true
+      }
+    },
+    {
+      "id": "q_baker_shelf",
+      "giver": "baker",
+      "steps": [
+        {
+          "id": "ask",
+          "flag": "heard_shelf_story",
+          "text": "Ask why the shelf radio must stay off."
+        },
+        {
+          "id": "listen",
+          "flag": "shelf_heard",
+          "text": "Listen to it after midnight, without tuning it."
+        }
+      ],
+      "reward": {
+        "item": "rye_loaf",
+        "once": true
+      }
+    },
+    {
+      "id": "q_warden_beacon",
+      "giver": "warden",
+      "steps": [
+        {
+          "id": "climb",
+          "flag": "at_beacon",
+          "text": "Climb to the harbour beacon."
+        },
+        {
+          "id": "align",
+          "flag": "beacon_aligned",
+          "text": "Align the aerial with the lighthouse bearing."
+        }
+      ],
+      "reward": {
+        "item": "warden_key",
+        "once": true
+      }
+    },
+    {
+      "id": "q_eel_sonar",
+      "giver": "fisher",
+      "steps": [
+        {
+          "id": "borrow",
+          "flag": "has_sounder",
+          "text": "Borrow the old depth sounder from the chapel loft."
+        },
+        {
+          "id": "tune",
+          "flag": "sounder_tuned",
+          "text": "Tune it until the eel shoals show."
+        }
+      ],
+      "reward": {
+        "item": "smoked_eel",
+        "once": true
+      }
+    },
+    {
+      "id": "q_chapel_bells",
+      "giver": "priest",
+      "steps": [
+        {
+          "id": "find",
+          "flag": "has_reel",
+          "text": "Find the reel-to-reel of the bells in the ferry cargo."
+        },
+        {
+          "id": "play",
+          "flag": "bells_broadcast",
+          "text": "Broadcast it on the evening frequency."
+        }
+      ],
+      "reward": {
+        "item": "chapel_candle",
+        "once": true
+      }
+    },
+    {
+      "id": "q_pilot_mayday",
+      "giver": "pilot",
+      "steps": [
+        {
+          "id": "decode",
+          "flag": "mayday_decoded",
+          "text": "Decode the repeating mayday on 121.5."
+        },
+        {
+          "id": "decide",
+          "flag": "mayday_choice",
+          "text": "Decide whether to tell the warden."
+        }
+      ],
+      "reward": {
+        "item": "flight_chart",
+        "once": true
+      }
+    },
+    {
+      "id": "q_last_set",
+      "giver": "mechanic",
+      "steps": [
+        {
+          "id": "collect",
+          "flag": "all_sets_done",
+          "text": "Mend every set in town."
+        },
+        {
+          "id": "final",
+          "flag": "announcer_answered",
+          "text": "Answer the announcer on the station's own frequency."
+        }
+      ]
+    }
+  ],
+  "procedural": {
+    "marsh_channels": {
+      "seeded": true,
+      "hand_built_core": [
+        "town_blocks",
+        "pier",
+        "chapel"
+      ]
+    }
+  }
+}

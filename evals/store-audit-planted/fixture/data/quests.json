@@ -1,0 +1,23 @@
+{
+  "quests": [
+    {
+      "id": "q_first_lamp",
+      "giver": "innkeeper",
+      "steps": [
+        { "id": "get_oil", "flag": "has_oil", "text": "Collect lamp oil from the smith." },
+        { "id": "light", "flag": "lamp_1_lit", "text": "Light the harbour lamp." }
+      ],
+      "reward": { "item": "brass_key", "once": true }
+    },
+    {
+      "id": "q_missing_ledger",
+      "giver": "scribe",
+      "steps": [
+        { "id": "ask", "flag": "asked_captain", "text": "Ask the captain about the ledger." },
+        { "id": "find", "flag": "has_ledger", "text": "Find it in the lamp-works." },
+        { "id": "return", "flag": "ledger_returned", "text": "Return it to the archive." }
+      ],
+      "reward": { "item": "ink_set", "once": true }
+    }
+  ]
+}

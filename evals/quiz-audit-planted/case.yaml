@@ -1,0 +1,65 @@
+schema_version: "1.1"
+name: quiz-audit-planted
+description: A twelve-item science quiz with nine planted Avoid tells. Bar is 80% of tell-* graders, the skill firing, and the audit block.
+tags: [quiz, audit, planted]
+execution:
+  max_turns: 40
+  allowed_tools: [Read, Glob, Grep, Skill]
+  prompt: |
+    I'm handing out this Year 7 science quiz on the solar system next week. The quiz is in the current directory. Can you review the questions and tell me what's wrong with them before I print it? Don't change anything yet.
+context:
+  scaffold_script: scaffold.sh
+graders:
+  - name: fired
+    type: tool_used
+    tool: Skill
+    input_match: '"skill"\s*:\s*"(?:[\w-]+:)?unclank-quiz"'
+    arm: both
+  - name: block
+    type: regex
+    pattern: 'UNCLANK-AUDIT[\s\S]*END-UNCLANK-AUDIT'
+  # key is the longest option in 10 of 12 items
+  - name: tell-d09-001
+    type: regex
+    pattern: '^(D09-001) \| Avoid \|'
+    flags: m
+  # key is B in 9 of 12 items, D once
+  - name: tell-d09-003
+    type: regex
+    pattern: '^(D09-003) \| Avoid \|'
+    flags: m
+  # keys repeat stem words (Q2, Q3, Q8, Q9) and distractors carry always/never/only
+  - name: tell-d09-002
+    type: regex
+    pattern: '^(D09-002) \| Avoid \|'
+    flags: m
+  # Q4 keys Venus as closest to the Sun, it is Mercury
+  - name: tell-d09-010
+    type: regex
+    pattern: '^(D09-010) \| Avoid \|'
+    flags: m
+  # Q5 Mars and Venus are both rocky planets
+  - name: tell-d09-004
+    type: regex
+    pattern: '^(D09-004) \| Avoid \|'
+    flags: m
+  # praise openers: Great job, Well done, Excellent work, Good try
+  - name: tell-d09-008
+    type: regex
+    pattern: '^(D09-008) \| Avoid \|'
+    flags: m
+  # explanations that only restate the key (Q1, Q3, Q4, Q5, Q6, Q8, Q9)
+  - name: tell-d09-009
+    type: regex
+    pattern: '^(D09-009) \| Avoid \|'
+    flags: m
+  # Q7 has All of the above as the key
+  - name: tell-d09-006
+    type: regex
+    pattern: '^(D09-006) \| Avoid \|'
+    flags: m
+  # Q6 stem is Which of the following is NOT a planet
+  - name: tell-d09-012
+    type: regex
+    pattern: '^(D09-012) \| Avoid \|'
+    flags: m

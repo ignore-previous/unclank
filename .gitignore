@@ -1,0 +1,7 @@
+.private-terms
+__pycache__/
+*.pyc
+.DS_Store
+evals/**/results/
+PLAN.md
+PROGRESS.md

@@ -1,0 +1,25 @@
+schema_version: "1.1"
+name: store-audit-clean
+description: A game that used AI openly and carefully, with an asset register, matching disclosures and Not-a-tell decoys. Bar is no Avoid hit in 2 of 3 runs.
+tags: [store, audit, clean]
+execution:
+  max_turns: 40
+  allowed_tools: [Read, Glob, Grep, Skill]
+  prompt: |
+    The game repo is in the current directory. We're submitting Saltmarsh Signal to Steam next week, so could you check it over before then? The store page text, Steam survey answers and itch.io settings are in store/. Report only, please, don't change anything.
+context:
+  scaffold_script: scaffold.sh
+graders:
+  - name: fired
+    type: tool_used
+    tool: Skill
+    input_match: '"skill"\s*:\s*"(?:[\w-]+:)?unclank-store"'
+    arm: both
+  - name: block
+    type: regex
+    pattern: 'UNCLANK-AUDIT[\s\S]*END-UNCLANK-AUDIT'
+  - name: clean-no-avoid
+    type: regex
+    pattern: '^D\d{2}-N?\d{2,3} \| Avoid \|'
+    flags: m
+    match: not_contains

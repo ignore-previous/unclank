@@ -1,0 +1,15 @@
+{
+  "village": "Greywick",
+  "npcs": [
+    { "id": "innkeeper", "name": "Elara", "role": "Innkeeper at the Drowned Lamp", "voice": "voice/elara.wav" },
+    { "id": "smith", "name": "Elias", "role": "Blacksmith", "voice": "voice/elias.wav" },
+    { "id": "herbalist", "name": "Mara", "role": "Herbalist", "voice": "voice/mara.wav" },
+    { "id": "captain", "name": "Captain Voss", "role": "Captain of the watch", "voice": "voice/voss.wav" },
+    { "id": "lord", "name": "Lord Vance", "role": "Owner of the lamp-works", "voice": "voice/vance.wav" },
+    { "id": "scribe", "name": "Clara", "role": "Archivist", "voice": "voice/clara.wav" },
+    { "id": "ferry", "name": "Elena", "role": "Ferrywoman", "voice": "voice/elena.wav" },
+    { "id": "thief", "name": "Kael", "role": "Pickpocket", "voice": "voice/kael.wav" },
+    { "id": "bard", "name": "Lyra", "role": "Street singer", "voice": "voice/lyra.wav" },
+    { "id": "hermit", "name": "Old Thorne", "role": "Hermit on the cliff", "voice": "voice/thorne.wav" }
+  ]
+}

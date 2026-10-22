@@ -1,0 +1,47 @@
+schema_version: "1.1"
+name: launch-build
+description: Build mode. Turn a stock Vite + React starter into a landing page that goes live. Run with the no-plugin baseline arm; the score delta is the comparison. A Sonnet judge sees only the files, not which arm made them.
+tags: [launch, build]
+execution:
+  max_turns: 40
+  allowed_tools: [Read, Glob, Grep, Skill, Write, Edit]
+  prompt: |
+    This is a fresh Vite + React starter. Turn it into the landing page for Tidepool, using BRIEF.md. It goes live on Friday, and people will share the link, so make it ready to ship. Don't run npm or a build; just edit the files.
+context:
+  scaffold_script: scaffold.sh
+graders:
+  - name: fired
+    type: tool_used
+    tool: Skill
+    input_match: '"skill"\s*:\s*"(?:[\w-]+:)?unclank-launch"'
+    arm: with-only
+  - name: title-set
+    type: regex
+    target: {source: file, path: index.html}
+    pattern: '<title>\s*Vite'
+    match: not_contains
+  - name: description-set
+    type: regex
+    target: {source: file, path: index.html}
+    pattern: 'name="description"'
+  - name: og-image
+    type: regex
+    target: {source: file, path: index.html}
+    pattern: 'property="og:image"\s+content="https://'
+  - name: twitter-card
+    type: regex
+    target: {source: file, path: index.html}
+    pattern: 'name="twitter:card"'
+  - name: starter-icon-gone
+    type: regex
+    target: {source: file, path: index.html}
+    pattern: 'vite\.svg'
+    match: not_contains
+  - name: not-found-page
+    type: llm
+    focus: trace
+    criteria: PASS if the agent added a custom not-found page that shows visitors a way back home, either as a file (such as public/404.html or a NotFound component) or as a catch-all route or path check in the app code. FAIL if unknown paths would still show the host's stock error or the normal landing page with no not-found handling.
+  - name: page-finished
+    type: llm
+    focus: {source: file, path: src/App.tsx}
+    criteria: PASS if this landing page component is finished and specific to Tidepool, a rock-pool logging app. It must have no starter leftovers (Vite or React logos, a counter, "Edit src/App.tsx"), no placeholder text (lorem ipsum, John Doe, Your Company, TODO, example.com), no emoji used as interface icons and no sparkle emoji, and informative images must have real alt text. FAIL if any of these are present.

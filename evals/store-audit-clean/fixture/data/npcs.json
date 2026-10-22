@@ -1,0 +1,14 @@
+{
+  "town": "Saltmarsh",
+  "npcs": [
+    { "id": "mechanic", "name": "Adaeze Nwosu", "role": "Radio mechanic, your teacher" },
+    { "id": "ferry", "name": "Bartek Wolniak", "role": "Ferryman" },
+    { "id": "baker", "name": "Nilufar Rashidova", "role": "Baker" },
+    { "id": "warden", "name": "Haruto Kobayashi", "role": "Harbour warden" },
+    { "id": "child", "name": "Teodora Ilic", "role": "Schoolchild with a broken set" },
+    { "id": "fisher", "name": "Mbali Dlamini", "role": "Eel fisher" },
+    { "id": "priest", "name": "Father Cormac Delaney", "role": "Chapel keeper" },
+    { "id": "pilot", "name": "Soledad Quispe", "role": "Seaplane pilot" },
+    { "id": "announcer", "name": "The Announcer", "role": "Voice on the radio (AI voice, disclosed)" }
+  ]
+}

@@ -1,0 +1,52 @@
+schema_version: "1.1"
+name: launch-audit-planted
+description: A starter-default site with eight planted Avoid tells. Bar is 80% of tell-* graders, the skill firing, and the audit block.
+tags: [launch, audit, planted]
+execution:
+  max_turns: 40
+  allowed_tools: [Read, Glob, Grep, Skill]
+  prompt: |
+    I'm about to launch my site, Tidepool. The project is in the current directory. Can you do a pre-launch check and tell me what makes it look unfinished? Don't change anything yet.
+context:
+  scaffold_script: scaffold.sh
+graders:
+  - name: fired
+    type: tool_used
+    tool: Skill
+    input_match: '"skill"\s*:\s*"(?:[\w-]+:)?unclank-launch"'
+    arm: both
+  - name: block
+    type: regex
+    pattern: 'UNCLANK-AUDIT[\s\S]*END-UNCLANK-AUDIT'
+  - name: tell-d08-002
+    type: regex
+    pattern: '^(D08-002) \| Avoid \|'
+    flags: m
+  - name: tell-d08-001
+    type: regex
+    pattern: '^(D08-001) \| Avoid \|'
+    flags: m
+  - name: tell-d08-004
+    type: regex
+    pattern: '^(D08-004) \| Avoid \|'
+    flags: m
+  - name: tell-d08-003
+    type: regex
+    pattern: '^(D08-003) \| Avoid \|'
+    flags: m
+  - name: tell-d08-005
+    type: regex
+    pattern: '^(D08-005|D03-013) \| Avoid \|'
+    flags: m
+  - name: tell-d08-007
+    type: regex
+    pattern: '^(D08-007) \| Avoid \|'
+    flags: m
+  - name: tell-d08-013
+    type: regex
+    pattern: '^(D08-013) \| Avoid \|'
+    flags: m
+  - name: tell-d08-008
+    type: regex
+    pattern: '^(D08-008) \| Avoid \|'
+    flags: m
