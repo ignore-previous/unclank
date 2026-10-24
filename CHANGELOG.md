@@ -13,6 +13,8 @@ Dates are when a change was made. Skills also show their own "Last reviewed" dat
 - Licence files: `LICENSE` now holds the full CC BY 4.0 text, so GitHub can name the licence. The MIT text moved to
   `scripts/LICENSE`. The terms are unchanged: written content is CC BY 4.0 and code is MIT. The README says which covers what.
 - `scripts/check.py` checks the new files and that both plugin manifests agree.
+- README: a new opening and a "What clanky work looks like" section. The "What's different" list is rewritten, and the note on naming a skill for smaller models moves under "How the skills work".
+- The plugin and marketplace manifests name the author "ruddy", the brand signature, instead of the GitHub handle. The marketplace summary now matches the plugin description.
 
 ## 0.1.1 (24 Oct 2026)
 

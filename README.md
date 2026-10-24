@@ -1,19 +1,20 @@
-# unclank
+# Unclank
 
-Agent skills that take the unwanted clank out of your work.
+Agents keep getting more capable. What still makes work good is a person testing it against what users need. Clanky work skipped that step: it looks fine until someone tries to use it. Unclank puts that step in your agent's hands.
 
-"Clanker" is what people now call a robot that's trying too hard to pass. Clanky work is the same thing in a project: the starter favicon nobody changed, the quiz where the right answer is always the longest, the fantasy cast all called Elara, the AI placeholder art that shipped and got found by players on day one. None of it proves AI was used. All of it tells the reader that nobody checked.
+## What clanky work looks like
 
-unclank gives your coding agent checklists for those tells (signs that nobody checked), so it can catch them before your users do, and avoid them while it builds.
+Agents can build a site, a quiz or a store page in an afternoon. The result often looks finished, then trips up the first real person who uses it. The browser tab still shows the default icon. You can guess the quiz answers without reading the questions. The store page misses a rule that gets it taken down.
+
+Using AI isn't the problem. Shipping its defaults is. Unclank gives your agent checklists for these gaps, so the work fits the people who'll use it.
 
 ## What's different
 
-There are plenty of anti-slop skills already (skills that steer an agent away from careless AI output). unclank is built for being right rather than strict:
+There are plenty of anti-slop skills already (skills that steer an agent away from careless AI output). Unclank is built to be right:
 
-- **Every check has evidence.** Each tell has an ID, sources, the date it was seen and a confidence rating. The skill can show its reasoning when you push back.
-- **"Not a tell" lists.** Things that get blamed on AI but are good practice: clean grammar, equal-length quiz options, a framework's normal behaviour, disclosing AI use. The skills are told not to "fix" them.
-- **Clusters, not single hits.** One em dash proves nothing. The skills report how many tells turn up together, because that's what readers react to.
-- **It doesn't accuse anyone.** The checks are for your own work. Human work gets flagged as AI all the time.
+- **Every item has evidence.** Each tell (one sign of clanky work) has an ID, a confidence rating and the date it was seen. Each tell links to its sources, so you can check the reasoning.
+- **Not every default is a problem.** Each skill lists things that look like defaults but are good practice: clean grammar, equal-length quiz options, a framework's normal behaviour, saying you used AI. The skills are told to leave them alone.
+- **Clusters count.** One em dash on its own means little. The skills report how many tells turn up together, because that's what readers react to.
 - **Platform rules come dated.** Steam, itch.io, Kickstarter, Apple and Google rules change. The skills give the date each rule was checked and send you to the live page before you submit.
 
 ## Skills
@@ -48,9 +49,11 @@ Each checklist line has a label and a confidence:
 - **Avoid**: fix it. **Choose deliberately**: fine if chosen, a signal when it's an unchosen default.
 - **Strong**: 3+ independent sources. **Moderate**: 2. **Anecdotal**: one opinion, so treat it as a hint.
 
+Agents load a skill when your request matches its description. Smaller models sometimes skip that step on a large project, so if you're using one, name the skill: "use unclank-launch to check this before I ship it".
+
 ## Install
 
-The skills are plain `SKILL.md` folders, so any agent that reads skills can use them.
+The skills are ordinary `SKILL.md` folders, so any agent that reads skills can use them.
 
 - **Claude Code:** add this repo as a plugin marketplace, then install the plugin:
 
@@ -62,15 +65,13 @@ The skills are plain `SKILL.md` folders, so any agent that reads skills can use 
   To try a local clone instead, start Claude Code with `claude --plugin-dir path/to/unclank`.
 - **Other agents (Codex, Cursor and others):** copy the folders in `skills/` into the folder your agent loads skills from. Each skill works on its own; the links from `references/evidence.md` into `research/` only work in a full clone.
 
-Agents load a skill when your request matches its description. Smaller models sometimes skip that step on a large project, so if you're using one, name the skill: "use unclank-launch to check this before I ship it".
-
 ## The research
 
 `research/` holds the full record behind the skills: ten domains, about 130 tells, 60 Not-a-tells and 570 source records, gathered in October 2026. Start with `research/README.md`. Each skill's `references/evidence.md` is generated from it, so the skills and the research can't drift apart.
 
 ## Checks
 
-`scripts/check.py` runs the static checks: tell IDs exist, labels and confidence match the research, evidence files are current, skills stay within their size budget, quotes stay short, and no private paths or addresses slip in. `python -m unittest discover -s scripts` tests the checker. Model-based example tests live in `evals/`.
+`scripts/check.py` confirms that tell IDs exist, labels and confidence match the research, evidence files are current, skills stay within their size budget, quotes stay short, and no private paths or addresses slip in. `python -m unittest discover -s scripts` tests it. Model-based example tests live in `evals/`.
 
 ## Keeping it current
 
@@ -78,13 +79,13 @@ Tells fade and platform rules change. Each skill shows a "Last reviewed" date, e
 
 ## Licence and credits
 
-unclank uses two licences:
+Unclank uses two licences:
 
-- Written content is under CC BY 4.0 (`LICENSE`). This covers the skills (`skills/`), the research (`research/`), the eval cases and fixtures (`evals/`) and the other documentation. To credit it, name "unclank", link the repository, and say if you changed it.
+- Written content is under CC BY 4.0 (`LICENSE`). This covers the skills (`skills/`), the research (`research/`), the eval cases and fixtures (`evals/`) and the other documentation. To credit it, name "Unclank", link the repository, and say if you changed it.
 - Code is under the MIT License (text in `scripts/LICENSE`). This covers the scripts in `scripts/` and any other code.
 
-Third-party sources cited in `research/` belong to their authors. unclank links to them and paraphrases them; it doesn't relicense them. Ideas taken from other projects are credited in `CREDITS.md`.
+Third-party sources cited in `research/` belong to their authors. Unclank links to them and paraphrases them; it doesn't relicense them. Ideas taken from other projects are credited in `CREDITS.md`.
 
 To report a security problem, see `SECURITY.md`.
 
-Researched and built with Claude.
+Built with Claude.
