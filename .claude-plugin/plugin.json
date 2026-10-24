@@ -1,8 +1,17 @@
 {
   "name": "unclank",
   "version": "0.1.0",
-  "description": "Evidence-backed checks for the tells that make work look machine-made: launch defaults, quiz items, game store pages, pixel art, AI images, UI and prose.",
-  "author": { "name": "unclank" },
+  "description": "Evidence-backed checks for the tells that make work look unchecked: launch defaults, quiz items and game store pages.",
+  "author": {
+    "name": "ruddy-dev"
+  },
   "license": "CC-BY-4.0 AND MIT",
-  "keywords": ["ai-slop", "audit", "checklist", "launch", "quiz", "pixel-art", "game-store", "design", "writing"]
+  "keywords": [
+    "ai-slop",
+    "audit",
+    "checklist",
+    "launch",
+    "quiz",
+    "game-store"
+  ]
 }

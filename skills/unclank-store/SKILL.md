@@ -37,7 +37,7 @@ Platform rules change. The rule lines below were checked on 20 Oct 2026, except 
 
 ### Asset register (do this first)
 - [Avoid · strong] **No AI asset register, or a build that wasn't checked against it** [D10-012]. Keep a list of every AI-touched asset: art, portraits, props, textures, voices, music, text, cutscenes, store art. Give each a status (ships, disclosed, to replace, replaced) and a replacement plan. Before launch, check the build and store page against it. Players found shipped placeholders in several recent games and the reaction was strong, and "we forgot to replace it" reads as indifference. One counter-case: a game with such a slip still sold well, so the cost isn't always sales.
-- [Avoid · strong] **Generated stand-ins or props that ship** [D06-002]. Log each as a ticket with a gate: replace it before any demo or release, or disclose it if it stays. Search the final build, not just the source folders.
+- [Avoid · strong] **Generated stand-ins or props that ship** [D06-002]. Log each as a ticket with a gate: replace it before any demo or release, or disclose it if it stays. Search the final build, not only the source folders.
 - [Avoid · anecdotal] **Disclosure added only after players found the AI** [D10-019]. Write the disclosure before launch. Say what is AI-made and what will be replaced, and make the store page match the build. A disclosure alone didn't stop complaints in one case, so check the build too.
 
 ### Platform rules (each line: checked 20 Oct 2026; re-check the live page)

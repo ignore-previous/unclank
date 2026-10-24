@@ -1,0 +1,12 @@
+{
+  "name": "unclank",
+  "owner": { "name": "ruddy-dev" },
+  "metadata": { "description": "Evidence-backed checks for the tells that make work look unchecked." },
+  "plugins": [
+    {
+      "name": "unclank",
+      "source": "./",
+      "description": "Pre-release checks for launch defaults, quiz items and game store pages, each backed by dated evidence."
+    }
+  ]
+}

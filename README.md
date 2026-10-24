@@ -4,14 +4,14 @@ Agent skills that take the clank out of your work.
 
 "Clanker" is what people now call a robot that's trying too hard to pass. Clanky work is the same thing in a project: the starter favicon nobody changed, the quiz where the right answer is always the longest, the fantasy cast all called Elara, the AI placeholder art that shipped and got found by players on day one. None of it proves AI was used. All of it tells the reader that nobody checked.
 
-unclank gives your coding agent checklists for those tells, so it can catch them before your users do, and avoid them while it builds.
+unclank gives your coding agent checklists for those tells (signs that nobody checked), so it can catch them before your users do, and avoid them while it builds.
 
 ## What's different
 
-There are plenty of anti-slop skills already. unclank is built for being right rather than strict:
+There are plenty of anti-slop skills already (skills that steer an agent away from careless AI output). unclank is built for being right rather than strict:
 
 - **Every check has evidence.** Each tell has an ID, sources, the date it was seen and a confidence rating. The skill can show its reasoning when you push back.
-- **"Not a tell" lists.** Things that get blamed on AI but are just good practice: clean grammar, equal-length quiz options, a framework's normal behaviour, disclosing AI use. The skills are told not to "fix" them.
+- **"Not a tell" lists.** Things that get blamed on AI but are good practice: clean grammar, equal-length quiz options, a framework's normal behaviour, disclosing AI use. The skills are told not to "fix" them.
 - **Clusters, not single hits.** One em dash proves nothing. The skills report how many tells turn up together, because that's what readers react to.
 - **It doesn't accuse anyone.** The checks are for your own work. Human work gets flagged as AI all the time.
 - **Platform rules come dated.** Steam, itch.io, Kickstarter, Apple and Google rules change. The skills give the date each rule was checked and send you to the live page before you submit.
@@ -52,7 +52,14 @@ Each checklist line has a label and a confidence:
 
 The skills are plain `SKILL.md` folders, so any agent that reads skills can use them.
 
-- **Claude Code:** load the plugin from a local clone with `claude --plugin-dir path/to/unclank`. A marketplace install will follow the first release.
+- **Claude Code:** add this repo as a plugin marketplace, then install the plugin:
+
+  ```
+  /plugin marketplace add ignore-previous/unclank
+  /plugin install unclank@unclank
+  ```
+
+  To try a local clone instead, start Claude Code with `claude --plugin-dir path/to/unclank`.
 - **Other agents (Codex, Cursor and others):** copy the folders in `skills/` into the folder your agent loads skills from. Each skill works on its own; the links from `references/evidence.md` into `research/` only work in a full clone.
 
 Agents load a skill when your request matches its description. Smaller models sometimes skip that step on a large project, so if you're using one, name the skill: "use unclank-launch to check this before I ship it".

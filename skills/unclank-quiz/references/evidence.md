@@ -88,7 +88,7 @@ search results but not opened.
 - Sources:
   - S-D09-006: Do Large Language Models Plan Answer Positions? Position Bias in Multiple-Choice Question Generation (Tang, Duan, Cai) (2026-05-03, fetched) <https://arxiv.org/html/2605.01846v1>
   - S-D09-007: Large Language Models Are Bad Dice Players (2026-01, fetched (v3 read via arXiv HTML; the PDF body was unreadable)) <https://arxiv.org/pdf/2601.05414>
-  - S-D09-052: Practitioner blog on AI exam-bank answer positions and shuffling (dev.to; title not recovered) (date not recovered, search only (not counted as independent evidence)) <URL not given>
+  - S-D09-052: AI-Generated Multiple-Choice Quizzes: I Found a Bias in Answer Placement (and How to Check Before You Ship) (dev.to) (date not recovered, fetched) <https://dev.to/masaoshimadaopen/ai-generated-multiple-choice-quizzes-i-found-a-bias-in-answer-placement-and-how-to-check-before-2ega>
 
 ## D09-006 "All of the above" and "None of the above" filler options
 
@@ -131,7 +131,7 @@ search results but not opened.
 - Sources:
   - S-D09-045: AI vs human MCQs, Copilot (GPT-4 based) item analysis with 159 students (Knight, McGee & Malau-Aduli; J Med Educ Curric Dev; title not recovered) (2026-03-03, fetched) <https://pmc.ncbi.nlm.nih.gov/articles/PMC12957612/>
   - S-D09-008: A comparison of the psychometric properties of GPT-4 versus human novice and expert authors... (Medical Teacher, Wu et al.) (2025, search only (abstract summary; the key-position claim is not in it)) <https://www.tandfonline.com/doi/full/10.1080/0142159X.2025.2513418>
-  - S-D09-040: Medical Teacher companion paper, 124 MCQs (40 GPT-4, 39 novice, 45 expert); only the DOI was given: 10.1080/0142159X.2025.2505122 (2025-05-29, search only) <URL not given>
+  - S-D09-040: Medical Teacher companion paper, 124 MCQs (40 GPT-4, 39 novice, 45 expert); title: GPT-4 versus human authors in clinically complex MCQ creation (2025-05-29, search only) <https://doi.org/10.1080/0142159X.2025.2505122>
   - S-D09-039: DeepSeek R1 physiology items vs faculty (Dhanvijay et al., Adv Physiol Educ 49:1045-1051) (2025, search only) <https://journals.physiology.org/doi/full/10.1152/advan.00197.2025>
   - S-D09-009: ChatGPT vs faculty items for an ophthalmology resident exam (title not recovered) (date not recovered, search only) <https://pubmed.ncbi.nlm.nih.gov/41407519/>
   - S-D09-010: Psychometric performance and student perceptions of AI- versus student-generated multiple-choice questions (BMC Med Educ 26:1376; also at https://link.springer.com/article/10.1186/s12909-026-09671-0) (2026-06-17, fetched) <https://pmc.ncbi.nlm.nih.gov/articles/PMC13508201/>
@@ -171,7 +171,7 @@ search results but not opened.
   - S-D09-045: AI vs human MCQs, Copilot (GPT-4 based) item analysis with 159 students (Knight, McGee & Malau-Aduli; J Med Educ Curric Dev; title not recovered) (2026-03-03, fetched) <https://pmc.ncbi.nlm.nih.gov/articles/PMC12957612/>
   - S-D09-046: AI-assisted vs expert MCQs item analysis (Avicenna J Med; title not recovered; figures internally inconsistent) (2025-11-19, fetched) <https://pmc.ncbi.nlm.nih.gov/articles/PMC12747746/>
   - S-D09-004: AI versus human-generated multiple-choice questions for medical education: a cohort study in a high-stakes examination (Law et al., BMC Med Educ 25:208) (2025-02-08, fetched) <https://pmc.ncbi.nlm.nih.gov/articles/PMC11806894/>
-  - S-D09-051: JMIR 2026 e100179, human-edited generative-AI-assisted MCQs, family medicine postgraduates (title not recovered) (2026, search only (both fetches returned an empty page)) <URL not given>
+  - S-D09-051: Human-Edited Generative AI-Assisted Multiple-Choice Questions in Postgraduate Family Medicine: Blinded Cross-Sectional Comparative Psychometric Study (JMIR 2026 e100179) (2026, search only (both fetches returned an empty page)) <https://doi.org/10.2196/100179>
   - S-D09-008: A comparison of the psychometric properties of GPT-4 versus human novice and expert authors... (Medical Teacher, Wu et al.) (2025, search only (abstract summary; the key-position claim is not in it)) <https://www.tandfonline.com/doi/full/10.1080/0142159X.2025.2513418>
   - S-D09-039: DeepSeek R1 physiology items vs faculty (Dhanvijay et al., Adv Physiol Educ 49:1045-1051) (2025, search only) <https://journals.physiology.org/doi/full/10.1152/advan.00197.2025>
 
@@ -190,8 +190,8 @@ search results but not opened.
   - S-D09-024: ChatGPT-3.5 immunology MCQs, NBME-style guidance (Ngo et al., Academic Pathology 11(1):100099) (2023-12-19, fetched (round 3; round 2 had search only)) <https://pmc.ncbi.nlm.nih.gov/articles/PMC10753050/>
   - S-D09-035: AI feedback in practice exams, student views (2025, search only) <https://arxiv.org/pdf/2505.13381>
   - S-D09-020: LLM feedback vs educator feedback (title not recovered) (2026, search only) <https://arxiv.org/pdf/2601.15280>
-  - S-D09-042: Computers and Education: AI, large-scale study of AI feedback quality (title not recovered) (2025, search only) <URL not recovered>
-  - S-D09-043: LLM feedback tutoring study (Thomas, Borchers, Koedinger et al.; title not recovered) (2026, search only) <URL not recovered>
+  - S-D09-042: Can students judge like experts? A large-scale study on the pedagogical quality of AI and human personalized formative feedback (Computers and Education: AI) (2025, search only) <https://www.sciencedirect.com/science/article/pii/S2666920X25001730>
+  - S-D09-043: LLM-Generated Feedback Supports Learning if Learners Choose to Use it (Thomas, Borchers, Koedinger et al.) (2026, search only) <https://link.springer.com/chapter/10.1007/978-3-032-03870-8_33>
 
 ## D09-008 Praise in quiz feedback ("Great question!", "Good work")
 
@@ -238,7 +238,7 @@ search results but not opened.
   - S-D09-026: School-level zero-shot question generation, repetitive output (title not recovered) (date not recovered, search only) <https://www.sciencedirect.com/science/article/pii/S2666920X25000104>
   - S-D09-027: GPT-4o-mini math item generation (title not recovered) (2025, search only) <https://arxiv.org/pdf/2511.11635>
   - S-D09-028: LLM distractor generation and student misconceptions (title not recovered) (2024, search only) <https://arxiv.org/html/2405.00864v1>
-  - S-D09-050: From Memorization to Creation (KDD '26; question generation and a "Unique" score) (2026-05-06, fetched) <URL not given; arXiv 2606.18257>
+  - S-D09-050: From Memorization to Creation (KDD '26; question generation and a "Unique" score) (2026-05-06, fetched) <https://arxiv.org/abs/2606.18257>
   - S-D09-004: AI versus human-generated multiple-choice questions for medical education: a cohort study in a high-stakes examination (Law et al., BMC Med Educ 25:208) (2025-02-08, fetched) <https://pmc.ncbi.nlm.nih.gov/articles/PMC11806894/>
 
 # Not a tell

@@ -52,7 +52,7 @@ search results but not opened.
   - S-D06-016: Kotaku (Zack Zwiezen): Exploring Steam Next Fest with an AI-blocking extension is very depressing (2026-06-15, fetched (lead-verified r2)) <https://kotaku.com/exploring-steam-next-fest-with-an-ai-blocking-extension-is-very-depressing-2000706695>
   - S-D06-017: PCGamesN (Ben Sledge): top 100 Next Fest demos, 10 disclose generative AI, 4 of those for placeholders (2026-02-24, fetched (lead-verified r2)) <https://www.pcgamesn.com/steam/next-fest-2026-generative-ai>
   - S-D06-018: Engadget (Jackson Chen): Crimson Desert developer apologises and promises to replace AI-generated art (other outlets covering the same statement count as one) (2026-03-22, fetched (r2)) <https://www.engadget.com/gaming/crimson-desert-developer-apologizes-and-promises-to-replace-ai-generated-art-183716439.html>
-  - S-D06-019: PC Gamer on Vapor World's AI cutscenes ("quintessential slop") (2026, search only) <URL not given in raw file>
+  - S-D06-019: PC Gamer on Vapor World's AI cutscenes ("quintessential slop") (2026, search only) <https://www.pcgamer.com/gaming-industry/steam-week-in-review-a-touch-of-ai-is-all-it-takes-to-trigger-backlash-as-a-promising-new-indie-falls-afoul-of-slop-skeptics/>
   - S-D06-041: Indiecator (MagiWasTaken): Steam Next Fest has an AI problem; Clair Obscur placeholder art; Eurogamer disclosure count (its 8,682 total, also on a ResetEra post, is not the figure Eurogamer reports via Engadget; see S-D06-066) (2026-06-16, fetched) <https://indiecator.org/2026/06/16/steam-next-fest-has-an-ai-problem-and-players-cant-filter-it-out/>
   - S-D06-042: GamesRadar: Crimson Desert replaces AI-generated assets left in by accident (patch 1.01.00) (2026, search only) <https://www.gamesradar.com/games/rpg/crimson-desert-replaces-ai-generated-assets-left-in-the-game-by-accident-as-part-of-ongoing-visual-improvements-alongside-improvements-to-loading-and-controls/>
   - S-D06-050: Everything Edinburgh: Vapor World Steam AI cutscene backlash (2026, search only) <https://everythingedinburgh.com/games/news/vapor-world-steam-ai-cutscene-backlash/>
@@ -73,7 +73,7 @@ search results but not opened.
   - S-D10-002: Steam updates AI disclosure form to specify it's focused on AI content consumed by players (PC Gamer) (16 Jan 2026, search only) <https://www.pcgamer.com/software/ai/steam-updates-ai-disclosure-form-to-specify-that-its-focused-on-ai-generated-content-that-is-consumed-by-players-not-efficiency-tools-used-behind-the-scenes/>
   - S-D10-003: Valve tweaks and clarifies AI disclosure rules for Steam (Game Developer) (Jan 2026, search only) <https://www.gamedeveloper.com/business/valve-tweaks-and-clarifies-ai-disclosure-rules-for-steam>
   - S-D10-004: Steam updates its gen AI disclosure policies (KitGuru) (Jan 2026, search only (did not resurface in round 2)) <https://www.kitguru.net/desktop-pc/mustafa-mahmoud/steam-updates-its-gen-ai-disclosure-policies/>
-  - S-D10-061: itch.io post quoting Valve's January 2024 AI wording (2024, search only) <https://itch.io/post/11880746>
+  - S-D10-061: Valve, AI Content on Steam (Steamworks Development announcement, Jan 2024) (2024, search only) <https://steamcommunity.com/gid/103582791433666425/announcements/detail/3862463747997849619>
 
 ## D10-002 Steam: AI-made store-page or marketing art
 
@@ -93,7 +93,7 @@ search results but not opened.
   - S-D10-004: Steam updates its gen AI disclosure policies (KitGuru) (Jan 2026, search only (did not resurface in round 2)) <https://www.kitguru.net/desktop-pc/mustafa-mahmoud/steam-updates-its-gen-ai-disclosure-policies/>
   - S-D10-024: 1666 Amsterdam developer drops gen AI art after community backlash (TechPowerUp) (2026, search only (403 in round 2)) <https://www.techpowerup.com/352122/1666-amsterdam-developer-drops-gen-ai-art-after-community-backlash>
   - S-D10-060: 1666: Amsterdam Dev Responds To AI Controversy (TheGamer) (10 Jun 2026, fetched (by the lead and by the gatherer)) <https://www.thegamer.com/1666-amsterdam-ai-art-response/>
-  - S-D10-061: itch.io post quoting Valve's January 2024 AI wording (2024, search only) <https://itch.io/post/11880746>
+  - S-D10-061: Valve, AI Content on Steam (Steamworks Development announcement, Jan 2024) (2024, search only) <https://steamcommunity.com/gid/103582791433666425/announcements/detail/3862463747997849619>
   - S-D10-065: 1666: Amsterdam (GamerMarkt) (undated, search only) <https://www.gamermarkt.com/blog/1666-amsterdam-ai-art-controversy-full-game/>
   - S-D10-075: 1666: Amsterdam drops generative AI, Panache says (1vX.gg) (undated, search only) <https://1vx.gg/news/panache-says-1666-amsterdam-has-removed-generative-ai-entirely>
 
@@ -289,8 +289,8 @@ search results but not opened.
 - Flag: Both items are search only. S-D06-022 is Pocketpair's John Buckley as quoted in Creative Bloq (the fetch of that page returned boilerplate), and calls AI capsule art an immediate turn-off. A single trailer accused of being generated is weak evidence, since false accusations on a "too clean" look are common (see D06-N04). See also: D01, D04.
 - Full record: ../../../research/domains/D06-game-design.md
 - Sources:
-  - S-D06-022: Creative Bloq on Next Fest, quoting Pocketpair's John Buckley on AI capsule art (2026-02, search only) <URL not given in raw file>
-  - S-D06-023: PC Gamer: AI-made games are easy to spot, capsule art has an uncanny sheen (2026, search only) <URL not given in raw file>
+  - S-D06-022: Creative Bloq on Next Fest, quoting Pocketpair's John Buckley on AI capsule art (2026-02, search only) <https://www.creativebloq.com/3d/video-game-design/has-ai-ruined-steam-next-fest>
+  - S-D06-023: PC Gamer, "Spammy AI-generated capsule art is a pox and it makes browsing Steam less fun" (AI-made games are easy to spot; capsule art has an uncanny sheen) (2026, search only) <https://www.pcgamer.com/gaming-industry/steam-week-in-review-spammy-ai-generated-capsule-art-is-a-pox-and-it-makes-browsing-steam-less-fun/>
 
 ## D10-013 AI images in a trailer or showcase
 
@@ -519,7 +519,7 @@ search results but not opened.
   - S-D06-021: StraySpark: Steam AI disclosure rules 2026, indie developer guide (vendor); a search snippet says Valve rewrote its disclosure rules on 17 Jan 2026 (2026-03, search only) <https://www.strayspark.studio/blog/steam-ai-disclosure-rules-2026-indie-developer-guide>
   - S-D06-034: Techdirt on Kotaku's pre-judging of AI in gaming coverage (2026-06-23, search only (page returned HTTP 403)) <https://www.techdirt.com/2026/06/23/kotakus-pre-judging-ai-in-gaming-coverage-is-getting-very-dumb/>
   - S-D06-035: Vice: Steam reviews have a serious AI problem that needs to be fixed (2025-12-17, search only) <https://www.vice.com/en/article/steam-reviews-have-a-serious-ai-problem-that-needs-to-be-fixed/>
-  - S-D06-036: Steam AI disclosure policy and community threads (required since Jan 2024) (2024-01, search only) <URL not given in raw file>
+  - S-D06-036: Valve, Steamworks content survey (AI disclosure, required since Jan 2024) (2024-01, fetched) <https://partner.steamgames.com/doc/gettingstarted/contentsurvey>
   - S-D06-066: Engadget (Anna Washenko): around a fifth of Steam Next Fest demos have a generative AI disclosure (reports Eurogamer's count: 1,704 of about 8,700) (2026-06-16, fetched) <https://www.engadget.com/2195840/around-a-fifth-of-steam-next-fest-demos-have-a-generative-ai-disclosure/>
 
 ## D10-N01 AI development and efficiency tools on Steam
@@ -573,16 +573,16 @@ search results but not opened.
 - Not a tell. One loop, a short run and a narrow scope are legitimate design choices; a small two-person game and a solo-made poker roguelike both did well. The tell is unexamined defaults inside a small scope.
 - Full record: ../../../research/domains/D06-game-design.md
 - Sources:
-  - S-D06-030: GamesRadar on Combolands (97% positive Steam reviews) (2026-09-24, search only) <URL not given in raw file>
-  - S-D06-031: Balatro (Wikipedia) (date not captured, search only) <URL not given in raw file>
+  - S-D06-030: GamesRadar on Combolands (97% positive Steam reviews) (2026-09-24, search only) <https://www.gamesradar.com/games/roguelike/even-after-palworld-1-0-pocketpair-lead-says-2026s-best-indie-could-be-this-overwhelmingly-positive-steam-roguelike-citybuilder-i-havent-played-a-game-more-addictive-since-balatro/>
+  - S-D06-031: Balatro (Wikipedia) (date not captured, fetched) <https://en.wikipedia.org/wiki/Balatro>
 
 ## D06-N07 Following a popular genre formula
 
 - Not a tell. Making a Balatro-like, roguelike or deckbuilder is not an AI tell; a crowded micro-genre is a discoverability issue. Clone-by-prompt is a copying concern, not a tell in the game itself.
 - Full record: ../../../research/domains/D06-game-design.md
 - Sources:
-  - S-D06-038: 2025 Next Fest roundup and Rock Paper Shotgun satire on the crowded Balatro-like genre (2025, search only) <URL not given in raw file>
-  - S-D06-039: Kotaku on people vibe-coding clones of developers' games (2026-07, search only) <URL not given in raw file>
+  - S-D06-038: 2025 Next Fest roundup (Qualbert) and Rock Paper Shotgun satire on the crowded Balatro-like genre (Nic Reuben, on indie genres converging into "grimdark Balatro") (2025, search only) <https://qualbert.com/top-10-steam-next-fest-2025-demos/; https://www.rockpapershotgun.com/indie-gamings-only-three-genres-have-inevitably-converged-into-grimdark-balatro-with-a-whimsical-egg-idiot>
+  - S-D06-039: Kotaku on people vibe-coding clones of developers' games (2026-07, fetched) <https://kotaku.com/people-are-using-ai-to-quickly-clone-games-before-the-indie-devs-can-release-them-2000716336>
 
 ## D06-N03 One cohesive art pack
 
@@ -607,7 +607,7 @@ search results but not opened.
 - Not a tell. One writer argues em dashes are a weak signal in fiction and uses them himself. Other sources list them among AI tells, so count them only together with other patterns such as D06-003.
 - Full record: ../../../research/domains/D06-game-design.md
 - Sources:
-  - S-D06-037: Kevin Hess, Substack, on em dashes in fiction (date not captured, search only) <URL not given in raw file>
+  - S-D06-037: Kevin Hess, One Million Words (Substack), on a sign of AI fiction that is "Not Em Dashes" (2025-08-13, search only (found in the archive listing)) <https://kevinhesswrites.substack.com/p/new-free-books-and-one-way-to-spot>
   - S-D06-024: ABC News (Cam Wilson) on an AI-generated book about him (2026-10-10, search only) <https://www.abc.net.au/news/2026-10-10/cam-wilson-ai-book-copyright-laws/107220714>
 
 ## D06-N08 AI-drafted lore and item text that a team edits

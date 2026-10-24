@@ -9,7 +9,7 @@ What makes creative and product work read as "AI slop", across ten domains, with
 3. **Read the label:**
    - **Avoid**: fix it.
    - **Choose deliberately**: fine in itself, but a strong signal when it is the unchosen default. Keep it if you can say why; change it if you can't.
-   - **Not a tell**: often blamed on AI, but it's just good practice. Don't "fix" it. See the [combined list](#not-a-tell-combined).
+   - **Not a tell**: often blamed on AI, but it's good practice. Don't "fix" it. See the [combined list](#not-a-tell-combined).
 4. **Weigh by confidence:**
    - **Strong** means 3+ independent sources. Act on it.
    - **Moderate** means 2 sources, or 1 with good data. Act on it unless you have a reason not to.

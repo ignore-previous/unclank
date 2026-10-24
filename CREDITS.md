@@ -21,6 +21,10 @@ These open-source skills covered the ground first, and unclank was planned after
 
 Rows marked "to be reviewed" will be read in full before the matching skill is written, and this table will say what was kept and what was left out.
 
+## Test fixtures
+
+The planted launch case (`evals/launch-audit-planted/`) copies Vite's default favicon, `vite.svg`, on purpose: the test checks that the starter icon gets noticed. It comes from the Vite project's starter templates, which are MIT-licensed. Vite and its logo belong to their owners.
+
 ## Licences used here
 
 - CC BY 4.0 legal text from Creative Commons (`LICENSE-CC-BY-4.0.txt`).
