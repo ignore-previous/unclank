@@ -1,6 +1,6 @@
 # unclank
 
-Agent skills that take the clank out of your work.
+Agent skills that take the unwanted clank out of your work.
 
 "Clanker" is what people now call a robot that's trying too hard to pass. Clanky work is the same thing in a project: the starter favicon nobody changed, the quiz where the right answer is always the longest, the fantasy cast all called Elara, the AI placeholder art that shipped and got found by players on day one. None of it proves AI was used. All of it tells the reader that nobody checked.
 
