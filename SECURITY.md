@@ -8,7 +8,7 @@ Say what you found, which file or skill it is in, and how to reproduce it. You'l
 
 ## What counts
 
-unclank is a set of skills (instructions your coding agent reads) and a few Python scripts for checks and evals. Report it if:
+Unclank is a set of skills (instructions your coding agent reads) and a few Python scripts for checks and evals. Report it if:
 
 - a skill tells the agent to run a command, change files outside the project it is auditing, or send anything off your machine;
 - a skill could make the agent read out or copy a secret, such as a key or token in the project it audits;
