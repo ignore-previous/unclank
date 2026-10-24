@@ -72,7 +72,7 @@ Labels: **Avoid** means fix it before launch. **Choose deliberately** means it's
    - Avoid hits first, worst first, then Choose deliberately. Give each hit its tell ID, file and line, what you saw, and the fix in one line.
    - Say how many hits there are, and whether they form a cluster. 3 or more Avoid hits is the pattern readers notice.
    - List the checks that passed in one line, so the user knows what was covered, then the "Check this" items.
-5. **End with the audit block,** exactly in this form. Use one line per hit, and leave out the "Check this" items. The label is exactly `Avoid` or `Choose deliberately`; for an inferred hit, start the note with `inferred:`. When something is missing, give the file where it belongs and `-` for the line. If there are no hits, write the two marker lines with nothing between them.
+5. **End with the audit block,** exactly in this form. Use one line per hit, and leave out the "Check this" items. The label is exactly `Avoid` or `Choose deliberately`; for an inferred hit, start the note with `inferred:`. When something is missing, give the file where it belongs and `-` for the line. If there are no hits, write the two marker lines with nothing between them. If there was nothing to audit (no project files you could read), say so and leave the block out.
 
 ```
 UNCLANK-AUDIT

@@ -1,7 +1,7 @@
 {
   "name": "unclank",
-  "version": "0.1.0",
-  "description": "Evidence-backed checks for the tells that make work look unchecked: launch defaults, quiz items and game store pages.",
+  "version": "0.1.1",
+  "description": "Checklists your coding agent runs so your work doesn't look unchecked. Skills so far: launch pages, quizzes and game store pages.",
   "author": {
     "name": "ruddy-dev"
   },

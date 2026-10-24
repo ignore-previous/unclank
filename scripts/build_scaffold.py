@@ -26,8 +26,10 @@ def render(case_dir: Path) -> str:
         "set -euo pipefail",
         "",
     ]
-    for path in sorted(p for p in fixture.rglob("*") if p.is_file()):
-        rel = path.relative_to(fixture).as_posix()
+    # Sort by the POSIX path string, not by Path: Windows paths compare without case,
+    # so README.md would sort after app.js there and before it on Linux.
+    files = sorted((p.relative_to(fixture).as_posix(), p) for p in fixture.rglob("*") if p.is_file())
+    for rel, path in files:
         if "/" in rel:
             out.append(f"mkdir -p '{rel.rsplit('/', 1)[0]}'")
         data = path.read_bytes()

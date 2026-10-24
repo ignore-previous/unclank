@@ -86,6 +86,21 @@ class CheckTest(unittest.TestCase):
         _, out = self.run_check()
         self.assertIn("launch-audit-planted/scaffold.sh: out of date", out)
 
+    def test_scaffold_order_is_case_sensitive(self) -> None:
+        # Same order on every OS: uppercase names sort before lowercase ones. This fails only on
+        # Windows if the bug returns; on Linux, test_clean_repo_passes covers it.
+        case = self.tmp / "evals" / "order-case"
+        (case / "fixture").mkdir(parents=True)
+        for name in ("app.js", "README.md"):
+            (case / "fixture" / name).write_text("x\n", encoding="utf-8", newline="\n")
+        scripts = str(ROOT / "scripts")
+        if scripts not in sys.path:
+            sys.path.insert(0, scripts)
+            self.addCleanup(sys.path.remove, scripts)
+        import build_scaffold
+        text = build_scaffold.render(case)
+        self.assertLess(text.index("'README.md'"), text.index("'app.js'"))
+
     def test_bad_frontmatter_name(self) -> None:
         self.edit("skills/unclank-launch/SKILL.md", "name: unclank-launch", "name: launch")
         _, out = self.run_check()

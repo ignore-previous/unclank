@@ -2,6 +2,16 @@
 
 Dates are when a change was made. Skills also show their own "Last reviewed" date.
 
+## 0.1.1 (24 Oct 2026)
+
+### Changed
+- Plugin and marketplace descriptions now say what the plugin is first, then which skills it has so far.
+- `unclank-launch`: when there is nothing to audit, it says so and leaves out the empty audit block.
+
+### Fixed
+- `scripts/build_scaffold.py` sorts fixture files the same way on every OS. Windows ignores letter case when sorting paths, so
+  the generated `scaffold.sh` files failed the Linux check.
+
 ## 0.1.0 (24 Oct 2026)
 
 First release.

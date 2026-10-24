@@ -1,12 +1,12 @@
 {
   "name": "unclank",
   "owner": { "name": "ruddy-dev" },
-  "metadata": { "description": "Evidence-backed checks for the tells that make work look unchecked." },
+  "metadata": { "description": "Agent skills that take the unwanted clank out of your work." },
   "plugins": [
     {
       "name": "unclank",
       "source": "./",
-      "description": "Pre-release checks for launch defaults, quiz items and game store pages, each backed by dated evidence."
+      "description": "Checklists your coding agent runs so your work doesn't look unchecked. Skills so far: launch pages, quizzes and game store pages."
     }
   ]
 }
