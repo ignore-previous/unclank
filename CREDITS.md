@@ -1,16 +1,16 @@
 # Credits
 
-unclank was researched and built with Claude.
+Unclank was researched and built with Claude.
 
 ## Research sources
 
-Every tell in `research/` lists its sources: studies, platform policy pages, developer and player discussions, press and practitioner posts. They belong to their authors. unclank links to them and paraphrases; quotes are kept under 15 words. The full list is in `research/sources.md`.
+Every tell in `research/` lists its sources: studies, platform policy pages, developer and player discussions, press and practitioner posts. They belong to their authors. Unclank links to them and paraphrases; quotes are kept under 15 words. The full list is in `research/sources.md`.
 
 ## Prior art
 
-These open-source skills covered the ground first, and unclank was planned after reading them. Where an idea below shaped unclank, it was rewritten in our own words; no text was copied. All are MIT-licensed unless noted.
+These open-source skills covered the ground first, and Unclank was planned after reading them. Where an idea below shaped Unclank, it was rewritten in our own words; no text was copied. All are MIT-licensed unless noted.
 
-| Project | What it does well | Idea unclank adapted |
+| Project | What it does well | Idea Unclank adapted |
 |---|---|---|
 | [avoid-ai-writing](https://github.com/conorbronsdon/avoid-ai-writing) | Prose tells with separate detect and rewrite modes, plus evals | Keeping audit (report only) apart from fixing |
 | [avoid-ai-design](https://github.com/funboy322/avoid-ai-design) | Design tells, each with a detection signal, rationale, fix and sources | Giving each tell a concrete detection step and a fix |
@@ -27,5 +27,5 @@ The planted launch case (`evals/launch-audit-planted/`) copies Vite's default fa
 
 ## Licences used here
 
-- CC BY 4.0 legal text from Creative Commons (`LICENSE-CC-BY-4.0.txt`).
-- MIT License text (`LICENSE-MIT`).
+- CC BY 4.0 legal text from Creative Commons (`LICENSE`).
+- MIT License text (`scripts/LICENSE`).

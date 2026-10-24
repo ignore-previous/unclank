@@ -13,7 +13,7 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-COPY = [".claude-plugin", "research", "scripts", "skills", "evals"]
+COPY = [".claude-plugin", ".cursor-plugin", "research", "scripts", "skills", "evals"]
 # The planted private term and email are built up from parts so that this file,
 # which is itself checked, doesn't contain them.
 PLANTED = "Planted" + "name"
@@ -80,6 +80,27 @@ class CheckTest(unittest.TestCase):
         _, out = self.run_check()
         for want in ("private term", "local file path", "email address", "quote of 15 words"):
             self.assertIn(want, out)
+
+    def test_only_the_security_address_is_allowed(self) -> None:
+        domain = "@" + "ignoreprevious.dev"
+        self.append("skills/unclank-store/SKILL.md", f"Write to security{domain}.")
+        _, out = self.run_check()
+        self.assertNotIn("email address", out)
+        self.append("skills/unclank-store/SKILL.md", f"Or to someone{domain}.")
+        _, out = self.run_check()
+        self.assertIn(f"email address someone{domain}", out)
+
+    def test_manifest_without_repository(self) -> None:
+        self.edit(".claude-plugin/plugin.json", '"repository"', '"repo"')
+        code, out = self.run_check()
+        self.assertEqual(code, 1)
+        self.assertIn("repository should be", out)
+
+    def test_cursor_manifest_out_of_step(self) -> None:
+        self.edit(".cursor-plugin/plugin.json", '"version": "', '"version": "9')
+        code, out = self.run_check()
+        self.assertEqual(code, 1)
+        self.assertIn(".cursor-plugin/plugin.json: version differs", out)
 
     def test_stale_scaffold(self) -> None:
         self.edit("evals/launch-audit-planted/fixture/index.html", "Vite + React + TS", "Tidepool")

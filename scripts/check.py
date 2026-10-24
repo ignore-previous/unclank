@@ -54,9 +54,10 @@ QUOTE = re.compile(r'"([^"\n]{3,}?)"|“([^”\n]{3,}?)”')
 LAST_REVIEWED = re.compile(r"^Last reviewed: \d{1,2} [A-Z][a-z]{2} \d{4}\.", re.M)
 LOCAL_PATH = re.compile(r"[A-Za-z]:[\\/]Users[\\/]|/home/[a-z]|~/\.claude")
 EMAIL = re.compile(r"[\w.+-]+@[\w-]+(?:\.[\w-]+)+")
-ALLOWED_EMAIL = re.compile(r"@(example\.(com|org|invalid)|users\.noreply\.github\.com|anthropic\.com)$")
-SHIPPED = ["skills", "research", "evals", "scripts", ".claude-plugin", ".github",
-           "README.md", "CREDITS.md", "CHANGELOG.md", "LICENSE", "LICENSE-MIT", "LICENSE-CC-BY-4.0.txt"]
+ALLOWED_EMAIL = re.compile(r"(@(example\.(com|org|invalid)|users\.noreply\.github\.com|anthropic\.com)|^security@ignoreprevious\.dev)$")
+SHIPPED = ["skills", "research", "evals", "scripts", ".claude-plugin", ".cursor-plugin", ".github",
+           "README.md", "CREDITS.md", "CHANGELOG.md", "SECURITY.md", "LICENSE"]
+REPO_URL = "https://github.com/ignore-previous/unclank"
 
 
 class Report:
@@ -247,6 +248,19 @@ def check_plugin(r: Report) -> None:
         r.error(".claude-plugin/plugin.json: name should be 'unclank'")
     if not re.match(r"^\d+\.\d+\.\d+$", str(data.get("version", ""))):
         r.error(".claude-plugin/plugin.json: version should be x.y.z")
+    if data.get("repository") != REPO_URL:
+        r.error(f".claude-plugin/plugin.json: repository should be {REPO_URL}")
+    if not str(data.get("homepage", "")).startswith("https://"):
+        r.error(".claude-plugin/plugin.json: homepage should be an https URL")
+    cp = ROOT / ".cursor-plugin" / "plugin.json"
+    try:
+        cursor = json.loads(cp.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        r.error(f".cursor-plugin/plugin.json: {exc}")
+        return
+    for key in ("name", "version", "description", "homepage", "repository", "license"):
+        if cursor.get(key) != data.get(key):
+            r.error(f".cursor-plugin/plugin.json: {key} differs from .claude-plugin/plugin.json")
 
 
 def urls(s: Source) -> list[str]:

@@ -1,7 +1,7 @@
 {
   "name": "unclank",
-  "owner": { "name": "ruddy-dev" },
-  "metadata": { "description": "Agent skills that take the unwanted clank out of your work." },
+  "owner": { "name": "ruddy" },
+  "metadata": { "description": "Checklists your coding agent runs so your work doesn't look unchecked. Skills so far: launch pages, quizzes and game store pages." },
   "plugins": [
     {
       "name": "unclank",
