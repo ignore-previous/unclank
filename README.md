@@ -78,6 +78,13 @@ Tells fade and platform rules change. Each skill shows a "Last reviewed" date, e
 
 ## Licence and credits
 
-Written content is CC BY 4.0 and code is MIT; see `LICENSE`. Ideas taken from other projects are credited in `CREDITS.md`.
+unclank uses two licences:
+
+- Written content is under CC BY 4.0 (`LICENSE`). This covers the skills (`skills/`), the research (`research/`), the eval cases and fixtures (`evals/`) and the other documentation. To credit it, name "unclank", link the repository, and say if you changed it.
+- Code is under the MIT License (text in `scripts/LICENSE`). This covers the scripts in `scripts/` and any other code.
+
+Third-party sources cited in `research/` belong to their authors. unclank links to them and paraphrases them; it doesn't relicense them. Ideas taken from other projects are credited in `CREDITS.md`.
+
+To report a security problem, see `SECURITY.md`.
 
 Researched and built with Claude.
