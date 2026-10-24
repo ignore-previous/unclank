@@ -27,5 +27,5 @@ The planted launch case (`evals/launch-audit-planted/`) copies Vite's default fa
 
 ## Licences used here
 
-- CC BY 4.0 legal text from Creative Commons (`LICENSE-CC-BY-4.0.txt`).
-- MIT License text (`LICENSE-MIT`).
+- CC BY 4.0 legal text from Creative Commons (`LICENSE`).
+- MIT License text (`scripts/LICENSE`).

@@ -2,6 +2,18 @@
 
 Dates are when a change was made. Skills also show their own "Last reviewed" date.
 
+## 0.1.2 (24 Oct 2026)
+
+### Added
+- `SECURITY.md`: how to report a security problem privately.
+- A Cursor plugin manifest (`.cursor-plugin/plugin.json`), so Cursor can install the same skills.
+- `homepage` and `repository` in the plugin manifest.
+
+### Changed
+- Licence files: `LICENSE` now holds the full CC BY 4.0 text, so GitHub can name the licence. The MIT text moved to
+  `scripts/LICENSE`. The terms are unchanged: written content is CC BY 4.0 and code is MIT. The README says which covers what.
+- `scripts/check.py` checks the new files and that both plugin manifests agree.
+
 ## 0.1.1 (24 Oct 2026)
 
 ### Changed
