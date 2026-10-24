@@ -1,0 +1,19 @@
+{
+  "name": "unclank",
+  "version": "0.1.2",
+  "description": "Checklists your coding agent runs so your work doesn't look unchecked. Skills so far: launch pages, quizzes and game store pages.",
+  "author": {
+    "name": "ruddy"
+  },
+  "homepage": "https://ignoreprevious.dev",
+  "repository": "https://github.com/ignore-previous/unclank",
+  "license": "CC-BY-4.0 AND MIT",
+  "keywords": [
+    "ai-slop",
+    "audit",
+    "checklist",
+    "launch",
+    "quiz",
+    "game-store"
+  ]
+}
