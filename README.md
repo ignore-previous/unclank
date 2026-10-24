@@ -2,6 +2,8 @@
 
 Agents keep getting more capable. What still makes work good is a person testing it against what users need. Clanky work skipped that step: it looks fine until someone tries to use it. Unclank puts that step in your agent's hands.
 
+Runs: [inside Claude Code or Codex](#install) · Sends: [only what that app already sends](SECURITY.md#what-counts) · Won't: [add tracking](skills/), or [change files until you ask](#how-the-skills-work)
+
 ## What clanky work looks like
 
 Agents can build a site, a quiz or a store page in an afternoon. The result often looks finished, then trips up the first real person who uses it. The browser tab still shows the default icon. You can guess the quiz answers without reading the questions. The store page misses a rule that gets it taken down.
