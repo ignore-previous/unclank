@@ -2,9 +2,9 @@
 
 ## Reporting a problem
 
-Email security@ignoreprevious.dev. Please don't open a public issue for a security problem. You can also open a private security advisory on this repository.
+Email security@ignoreprevious.dev. Please don't open a public issue for a security problem.
 
-Say what you found, which file or skill it is in, and how to reproduce it. You'll get a reply when the report has been read, and a note in `CHANGELOG.md` when it is fixed.
+Say what you found, which file or skill it is in, and how to reproduce it. You'll get a reply when the report has been read. The fix is listed in `CHANGELOG.md`, without your name unless you ask for it.
 
 ## What counts
 
