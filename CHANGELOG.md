@@ -2,6 +2,11 @@
 
 Dates are when a change was made. Skills also show their own "Last reviewed" date.
 
+## Unreleased
+
+### Changed
+- The plugin icon is now the side-eye robot on yellow.
+
 ## 0.1.2 (24 Oct 2026)
 
 ### Added
