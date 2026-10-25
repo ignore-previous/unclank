@@ -1,22 +1,24 @@
 # Unclank
 
-Agents keep getting more capable. What still makes work good is a person testing it against what users need. Clanky work skipped that step: it looks fine until someone tries to use it. Unclank puts that step in your agent's hands.
+Checklists for launch pages, quizzes and store releases.
+
+Unclank helps you make better work with AI. It gives your AI checklists for unfinished launch pages, faulty quiz questions and store-page requirements. You review the findings and decide what to fix.
 
 Runs: [inside Claude Code or Codex](#install) · Sends: [only what that app already sends](SECURITY.md#what-counts) · Won't: [add tracking](skills/), or [change files until you ask](#how-the-skills-work)
 
-## What clanky work looks like
+## What the checklists catch
 
 Agents can build a site, a quiz or a store page in an afternoon. The result often looks finished, then trips up the first real person who uses it. The browser tab still shows the default icon. You can guess the quiz answers without reading the questions. The store page misses a rule that gets it taken down.
 
-Using AI isn't the problem. Shipping its defaults is. Unclank gives your agent checklists for these gaps, so the work fits the people who'll use it.
+Using AI isn't the problem. Shipping its defaults is.
 
 ## What's different
 
-There are plenty of anti-slop skills already (skills that steer an agent away from careless AI output). Unclank is built to be right:
+There are plenty of anti-slop skills already (skills that steer an agent away from careless AI output). Each checklist records its evidence and limits:
 
-- **Every item has evidence.** Each tell (one sign of clanky work) has an ID, a confidence rating and the date it was seen. Each tell links to its sources, so you can check the reasoning.
+- **Every item has evidence.** Each finding type has an ID, a confidence rating and the date it was seen. It links to its sources, so you can check the reasoning.
 - **Not every default is a problem.** Each skill lists things that look like defaults but are good practice: clean grammar, equal-length quiz options, a framework's normal behaviour, saying you used AI. The skills are told to leave them alone.
-- **Clusters count.** One em dash on its own means little. The skills report how many tells turn up together, because that's what readers react to.
+- **Clusters count.** One em dash on its own means little. The skills report how many signs of careless AI output turn up together, because that's what readers react to.
 - **Platform rules come dated.** Steam, itch.io, Kickstarter, Apple and Google rules change. The skills give the date each rule was checked and send you to the live page before you submit.
 
 ## Skills
