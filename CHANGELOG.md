@@ -4,6 +4,8 @@ Dates are when a change was made. Skills also show their own "Last reviewed" dat
 
 ## Unreleased
 
+### Changed
+- The plugin icon is now the side-eye robot on yellow.
 - README: explain the checklists in everyday terms and make clear that you review the findings.
 
 ## 0.1.2 (24 Oct 2026)
