@@ -81,6 +81,10 @@ The skills are ordinary `SKILL.md` folders, so any agent that reads skills can u
 
 Tells fade and platform rules change. Each skill shows a "Last reviewed" date, each tell keeps the date it was seen, and the research gets a light re-check every three months. Changes are listed in `CHANGELOG.md`.
 
+## How we build this
+
+Unclank is built with AI coding agents (Claude Code and Codex). Every change is reviewed before it ships.
+
 ## Licence and credits
 
 Unclank uses two licences:
